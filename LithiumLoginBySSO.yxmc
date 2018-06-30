@@ -1,0 +1,1205 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.2">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="966" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="ResponseFormat" />
+          </Fields>
+          <Data>
+            <r>
+              <c>json</c>
+            </r>
+            <r>
+              <c>xml</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output Format</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ResponseFormat" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/messages/id/112912</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>MessageDetails</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="58" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="1158" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/boards/id/data-sources/messages/linear?topic_sort_order=last_post_date&amp;page_size=1&amp;page=1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get latest from board</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="129" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="1062" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/threads/id/112806/solutions</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check for Solutions By Thread</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="67" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="1338" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/users/id/4534</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>USerDetails</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="53" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/messages/id/89094/web_page_url</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>MessageBrowsableURL</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="70" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="1434" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Login" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/threads/id/112806/solutions</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check for Solutions</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Login" size="67" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="270" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Login" />
+          </Fields>
+          <Data>
+            <r>
+              <c>/authentication/sessions/login</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Login</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Login" size="30" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="1122" width="480" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+including ranking: http://community.alteryx.com/restapi/vc/users/id/4534/ranking
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get All Boards</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="92" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="390" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>LoginCall</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="CommunityAPIRoot" selected="False" />
+              <Field name="restapi.response_format" selected="False" />
+              <Field name="sso.authentication_token" selected="False" />
+              <Field name="LoginCall" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>POST</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="restapi.response_format" />
+              <Field name="sso.authentication_token" />
+              <Field name="CommunityAPIRoot" selected="False" />
+              <Field name="LoginCall" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+            <ContentType>Urlencoded</ContentType>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>1</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="138" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="CommunityAPIRoot" />
+            <Field name="restapi.response_format" />
+            <Field name="sso.authentication_token" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc</c>
+              <c>json</c>
+              <c>Y9lZ4fyM6-ExE8R87mz3zdSFqfKOPVZKsJ0Fgcsd62A6z2G4FqARDJeqz1wLhOhgYAmHV3_hrwo-jdIs4HAPc06KZIDPIrcitKuEyOp8OIlpaRHFql-7wmZHcd814oxhP8o8OXWF92fegfpvULRAwm4OCuE3v0A_Qynci02YlyWAheF2unLL8U_-w9q53N36S-PeASQ7XMnv1EgD2ocydBqCZe8KSEWS7g8EuxkMc-TA8SIkLckColqjyxH-PfHwIETHtCwA8GO-jWEO6cA_ztapn9fcKap33kFpSYA-x_17eAm5jK5sBPz-cclTnS7_-paZ1S6Bwq2wPhrYuVLvtn1pge2YFI15kF-VAF6tumt6zZlsJompnvMZ7IUzVJhMsKEuNbD2YkLeHa_d0pfq-MqrX7bqZ_TvzxCWdu1qabpm1K_fGGauynZAZAkYQnuY</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" field="LoginCall" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[LoginCall = [CommunityAPIRoot] + "/authentication/sessions/login"
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="558" y="54" width="468" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>to read my cookies - go to: 
+chrome://settings/cookies/detail?site=alteryx.com&amp;search=site
+Look for the one titled !LithiumSSO</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="582" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>DownloadData</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="678" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>JSON_Name</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>response.value.$</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[JSON_Name] = "response.value.$"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="774" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="JSON_ValueString" selected="True" rename="Li-Api-Session-Key" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Li-Api-Session-Key" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="114" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="234" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="114" y="258" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="186" y="258" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="330" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="234" y="258" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="894" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output33</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="678" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[JSON_Name] = "response.status"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>JSON_Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-19 08:22:42</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>response.status</Operand>
+              <StartDate>2018-04-19 08:22:42</StartDate>
+              <EndDate>2018-04-19 08:22:42</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[JSON_Name] = "response.status"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\seanb\AppData\Local\Temp\Engine_13928_233b73756c644f7ba2cd6e5e52ce2cbe_\Engine_10500_c371a6f2687e415fbea4905b84a7e492_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="498" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([DownloadData],"User authentication failed")</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>DownloadData</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-06-07 09:53:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>User authentication failed</Operand>
+              <StartDate>2018-06-07 09:53:16</StartDate>
+              <EndDate>2018-06-07 09:53:16</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([DownloadData],"User authentication failed")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+            <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="546" y="102" width="273" height="177" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ErrorChecks</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="58">
+          <GuiSettings>
+            <Position x="556" y="131" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.HTTP Header from Download Tool"><![CDATA[DownloadHeaders=DownloadHeaders
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>HTTP Header Interpreter (56)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output13">
+              <RecordInfo>
+                <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+                <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+                <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+                <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="Code" size="5" source="TextInput:" type="String" />
+                <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+                <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+                <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="HTTP Header Interpreter.yxmc" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="652" y="131" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[IsErrorResponse] = 1</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsTrue</Operator>
+                <Field>IsErrorResponse</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-06-07 09:22:25</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-06-07 09:22:25</StartDate>
+                  <EndDate>2018-06-07 09:22:25</EndDate>
+                  <Operand>
+                  </Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[IsErrorResponse] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+                <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+                <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+                <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="Code" size="5" source="TextInput:" type="String" />
+                <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+                <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+                <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+                <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+                <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+                <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="Code" size="5" source="TextInput:" type="String" />
+                <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+                <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+                <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+            <Position x="748" y="131" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <When>Filter</When>
+              <Filter>1=1</Filter>
+              <Type>Message</Type>
+              <Priority>Normal</Priority>
+              <Transient>False</Transient>
+              <MessageExpression>"Error " + [Code] + ": " + [Human Readable Descr]</MessageExpression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+                <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+                <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+                <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="Code" size="5" source="TextInput:" type="String" />
+                <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+                <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+                <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+            <Position x="750" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <When>Last</When>
+              <Filter />
+              <Type>Message</Type>
+              <Priority>Normal</Priority>
+              <Transient>False</Transient>
+              <MessageExpression>"User Authentication Failed"</MessageExpression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CommunityAPIRoot" size="39" source="TextInput:" type="String" />
+                <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+                <Field name="sso.authentication_token" size="448" source="TextInput:" type="V_String" />
+                <Field name="LoginCall" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/authentication/sessions/login&quot;&#xA;" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="58" Connection="HTTP Header from Download Tool" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="True" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="45" Connection="Question" />
+      <Destination ToolID="47" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="46" Connection="Question" />
+      <Destination ToolID="48" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="47" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="48" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="50" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="49" Connection="Question" />
+      <Destination ToolID="50" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="False" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="True" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output13" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="True" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (45)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (46)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (49)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>LithiumLoginBySSO</Name>
+      <Description>Find your SSO token by signing in using Chrome, and then going to chrome://settings/cookies/detail?site=alteryx.com&amp;search=site
+Look for the one titled !LithiumSSO</Description>
+      <RootToolName>Lithium</RootToolName>
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="chrome://settings/cookies/detail?site=alteryx.com&amp;search=site" displayed="Chrome link for your Lithium SSO" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="47" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>38/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="48" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>38/Data/r[1]/c[2]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	2</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="50" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>38/Data/r[1]/c[3]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	3</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (17)</Name>
+          <ToolId value="17" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Community API Root</Description>
+              <Name>Text Box (45)</Name>
+              <ToolId value="45" />
+              <Default>http://community.alteryx.com/restapi/vc</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>ResponseFormat</Description>
+              <Name>Drop Down (46)</Name>
+              <ToolId value="46" />
+              <Multiple value="False" />
+              <Default>json</Default>
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[json
+xml
+]]></Manual_Values>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Lithium SSO Token</Description>
+              <Name>Text Box (49)</Name>
+              <ToolId value="49" />
+              <Default>uyDk4fyM6-ExE8R6Wt3GQ-LB_2qk1B-Uc5cNu8A2FRB3siGqcK-DLQbMwlfzWN8WU3jvYQqSrz0BxoUf5_6pu6CIVrj2Udq7H3qpV08tLN0-BIZJWfkSkZrOsmteK5otuAa0PWvCQS2ARfbOz0H7dVYdtrD5Nm3JGCw6W_uLTLNAvBA-C09EbObIIE55s-HREJTBzc-FuQ0ZMXuWT2YfCjvjLszsqajtdF4MpxGNk8btDwbt-7E_IFwSAu1C7nsVzX5iiVOY-5ZJLyag5uCIYnWurP8WISLQZhWDhAiBQI-K_Wad62FHSrae2sXwh4L8hs2YWZcHQbUYE5gybArtONTR-XD8bi91Sl3kW9ckBuEtxEv7SvjyvnQsDIlUqRmGycHWlaf91L5Pjym2ZGEiXqxWyrW0XVE8do8iFqe0QfphmKb1FbS31-bfoOeyC1yq</Default>
+              <Password value="False" />
+              <Multiline value="True" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (33)</Description>
+              <Name>Macro Output (52)</Name>
+              <ToolId value="52" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="52" Selected="True" />
+        <Tool ToolId="63" Selected="False" />
+        <Tool ToolId="58" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

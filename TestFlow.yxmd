@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.2">
+  <Nodes>
+    <Node ToolID="44">
+      <GuiSettings>
+        <Position x="342" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Text Box (45)">http://community.alteryx.com/restapi/vc</Value>
+          <Value name="Check Box (63)">False</Value>
+          <Value name="Check Box (64)">False</Value>
+          <Value name="Date (66)">2018-06-09</Value>
+          <Value name="Date (67)">2018-06-09</Value>
+          <Value name="Check Box (65)">True</Value>
+          <Value name="Numeric Up Down (68)">3557</Value>
+          <Value name="Input.Keys" />
+          <Value name="List Box (90)">Name=False,Rank=False,Last Visited=False,Registered=False,Stars=False,E-Mail=False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>LithiumUsers (3)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="LithiumUsers.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_31180_5e299478d8734ad39a0c814fc487f8ae_\Engine_26200_344fca8a4ec2499481c228424c74bdca_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings>
+        <Position x="342" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Text Box (45)">http://community.alteryx.com/restapi/vc</Value>
+          <Value name="Input.Keys" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="LithiumRankings.yxmc" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings>
+        <Position x="342" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Text Box (45)">http://community.alteryx.com/restapi/vc</Value>
+          <Value name="Input.Keys"><![CDATA[Li-Api-Session-Key=Li-Api-Session-Key
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>LithiumBadges (31)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="LithiumBadges.yxmc" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="486" y="54" width="468" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>to read my cookies - go to: 
+chrome://settings/cookies/detail?site=alteryx.com&amp;search=site
+Look for the one titled !LithiumSSO</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings>
+        <Position x="30" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Text Box (45)">http://community.alteryx.com/restapi/vc</Value>
+          <Value name="Drop Down (46)">json</Value>
+          <Value name="Text Box (49)">uyDk4fyM6-ExE8R6Wt3GQ-LB_2qk1B-Uc5cNu8A2FRB3siGqcK-DLQbMwlfzWN8WU3jvYQqSrz0BxoUf5_6pu6CIVrj2Udq7H3qpV08tLN0-BIZJWfkSkZrOsmteK5otuAa0PWvCQS2ARfbOz0H7dVYdtrD5Nm3JGCw6W_uLTLNAvBA-C09EbObIIE55s-HREJTBzc-FuQ0ZMXuWT2YfCjvjLszsqajtdF4MpxGNk8btDwbt-7E_IFwSAu1C7nsVzX5iiVOY-5ZJLyag5uCIYnWurP8WISLQZhWDhAiBQI-K_Wad62FHSrae2sXwh4L8hs2YWZcHQbUYE5gybArtONTR-XD8bi91Sl3kW9ckBuEtxEv7SvjyvnQsDIlUqRmGycHWlaf91L5Pjym2ZGEiXqxWyrW0XVE8do8iFqe0QfphmKb1FbS31-bfoOeyC1yq</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="LithiumLoginBySSO.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="45" Connection="Output33" />
+      <Destination ToolID="38" Connection="Keys" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>TestFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

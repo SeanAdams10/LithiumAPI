@@ -1,0 +1,1255 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.2">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="966" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="ResponseFormat" />
+          </Fields>
+          <Data>
+            <r>
+              <c>json</c>
+            </r>
+            <r>
+              <c>xml</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output Format</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ResponseFormat" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/messages/id/112912</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>MessageDetails</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="58" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="1158" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/boards/id/data-sources/messages/linear?topic_sort_order=last_post_date&amp;page_size=1&amp;page=1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get latest from board</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="129" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="1062" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/threads/id/112806/solutions</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check for Solutions By Thread</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="67" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="1338" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/users/id/4534</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>USerDetails</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="53" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/messages/id/89094/web_page_url</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>MessageBrowsableURL</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="70" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="1434" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Login" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/threads/id/112806/solutions</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check for Solutions</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Login" size="67" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="270" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Login" />
+          </Fields>
+          <Data>
+            <r>
+              <c>/authentication/sessions/login</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Login</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Login" size="30" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="1122" width="480" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+including ranking: http://community.alteryx.com/restapi/vc/users/id/4534/ranking
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://community.alteryx.com/restapi/vc/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get All Boards</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="92" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="498" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>BoardList</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="CommunityAPIRoot" selected="False" />
+              <Field name="restapi.response_format" selected="False" />
+              <Field name="Li-Api-Session-Key" selected="False" />
+              <Field name="BoardList" selected="False" />
+              <Field name="show_hidden" selected="False" />
+              <Field name="page_size" selected="False" />
+              <Field name="page" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>POST</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="restapi.response_format" />
+              <Field name="Li-Api-Session-Key" />
+              <Field name="show_hidden" />
+              <Field name="page_size" />
+              <Field name="page" />
+              <Field name="CommunityAPIRoot" selected="False" />
+              <Field name="BoardList" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+            <ContentType>Urlencoded</ContentType>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="CommunityAPIRoot" />
+            <Field name="restapi.response_format" />
+            <Field name="Li-Api-Session-Key" />
+          </Fields>
+          <Data>
+            <r>
+              <c>https://community.lithium.com/restapi/vc</c>
+              <c>json</c>
+              <c>FFAD13887FA633F7B8A6687B74DD0D38</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" field="BoardList" size="1073741823" type="V_WString" />
+            <FormulaField expression="'true'" field="show_hidden" size="1073741823" type="V_WString" />
+            <FormulaField expression="1000" field="page_size" size="2" type="Int16" />
+            <FormulaField expression="1" field="page" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>BoardList = [CommunityAPIRoot] + "/boards/nested?show_hidden=true&amp;page_size=1000...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="558" y="54" width="468" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>to read my cookies - go to: 
+chrome://settings/cookies/detail?site=alteryx.com&amp;search=site
+Look for the one titled !LithiumSSO</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="630" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>DownloadData</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="114" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="114" y="258" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="282" y="66" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="234" y="258" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1590" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output33</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="930" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[JSON_Name] = "response.status"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>JSON_Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-19 08:22:42</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>response.status</Operand>
+              <StartDate>2018-04-19 08:22:42</StartDate>
+              <EndDate>2018-04-19 08:22:42</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[JSON_Name] = "response.status"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="774" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>JSON_Name</Field>
+          <RegExExpression value="\Qresponse.boards.board.\E([0-9]+)\..+" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="BoardID" type="Int32" size="4" />
+          </ParseComplex>
+          <Match>
+            <Field>CommunityAPIRoot_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+\Qresponse.boards.board.\E(...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="1014" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>JSON_Name</Field>
+          <RegExExpression value="\Qresponse.boards.board.\E[0-9]+\.(.+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="BoardField" type="V_WString" size="999" />
+          </ParseComplex>
+          <Match>
+            <Field>CommunityAPIRoot_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+\Qresponse.boards.board.\E[...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardField" size="999" source="RegEx: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="906" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([BoardID])</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>BoardID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-06-24 23:20:33</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2018-06-24 23:20:33</StartDate>
+              <EndDate>2018-06-24 23:20:33</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([BoardID])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1110" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>contains([BoardField],'Title') 
+or contains([BoardField],'ID.')
+OR contains([BoardField],'description.')</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>BoardField</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-06-24 23:21:08</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-06-24 23:21:08</StartDate>
+              <EndDate>2018-06-24 23:21:08</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>contains([BoardField],'Title') 
+or contains([BoardField],'ID.')
+OR contains([Boa...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardField" size="999" source="RegEx: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardField" size="999" source="RegEx: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1302" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CommunityAPIRoot" selected="False" />
+            <SelectField field="restapi.response_format" selected="False" />
+            <SelectField field="Li-Api-Session-Key" selected="False" />
+            <SelectField field="BoardList" selected="False" />
+            <SelectField field="show_hidden" selected="False" />
+            <SelectField field="page_size" selected="False" />
+            <SelectField field="page" selected="False" />
+            <SelectField field="DownloadHeaders" selected="False" />
+            <SelectField field="JSON_Name" selected="False" />
+            <SelectField field="BoardID" selected="True" />
+            <SelectField field="BoardField" selected="True" />
+            <SelectField field="JSON_ValueString" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardField" size="999" source="RegEx: Parsed from JSON_Name" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1494" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="BoardID" />
+          </GroupFields>
+          <HeaderField field="BoardField" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="Description" size="2048" source="CrossTab:Header:BoardField:Description:Concat:" type="V_WString" />
+            <Field name="Id" size="2048" source="CrossTab:Header:BoardField:Id:Concat:" type="V_WString" />
+            <Field name="ShortTitle" size="2048" source="CrossTab:Header:BoardField:ShortTitle:Concat:" type="V_WString" />
+            <Field name="Title" size="2048" source="CrossTab:Header:BoardField:Title:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="BoardID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1206" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>not(Contains([BoardField], 'Type'))</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-06-24 23:25:32</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-06-24 23:25:32</StartDate>
+              <EndDate>2018-06-24 23:25:32</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>not(Contains([BoardField], 'Type'))</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardField" size="999" source="RegEx: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CommunityAPIRoot" size="40" source="TextInput:" type="String" />
+            <Field name="restapi.response_format" size="4" source="TextInput:" type="String" />
+            <Field name="Li-Api-Session-Key" size="32" source="TextInput:" type="String" />
+            <Field name="BoardList" size="1073741823" source="Formula: [CommunityAPIRoot] + &quot;/boards/nested?show_hidden=true&amp;page_size=1000&amp;page=1&quot;&#xA;" type="V_WString" />
+            <Field name="show_hidden" size="1073741823" source="Formula: 'true'" type="V_WString" />
+            <Field name="page_size" source="Formula: 1000" type="Int16" />
+            <Field name="page" source="Formula: 1" type="Int32" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="RegEx: Parsed from JSON_Name" type="Int32" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardField" size="999" source="RegEx: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings>
+        <Position x="1398" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"BoardField"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardID" source="Formula: IF [_CurrentFieldName_] IN(&quot;BoardField&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field description="RegEx: Parsed from JSON_Name" name="BoardField" size="999" source="Formula: IF [_CurrentFieldName_] IN(&quot;BoardField&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: IF [_CurrentFieldName_] IN(&quot;BoardField&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="45" Connection="Question" />
+      <Destination ToolID="47" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="47" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="50" Connection="Action" />
+      <Destination ToolID="38" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="49" Connection="Question" />
+      <Destination ToolID="50" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="True" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="True" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="65" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="True" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output26" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (45)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (49)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (52)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>LithiumBoards</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="47" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>38/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="50" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>FFAD13887FA633F7B8A6687B74DD0D38</ReplaceText>
+              <Destination>38/Data/r/c[3]</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (17)</Name>
+          <ToolId value="17" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Community API Root</Description>
+              <Name>Text Box (45)</Name>
+              <ToolId value="45" />
+              <Default>http://community.alteryx.com/restapi/vc</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Lithium Session ID</Description>
+              <Name>Text Box (49)</Name>
+              <ToolId value="49" />
+              <Default>FFAD13887FA633F7B8A6687B74DD0D38</Default>
+              <Password value="False" />
+              <Multiline value="True" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (33)</Description>
+              <Name>Macro Output (52)</Name>
+              <ToolId value="52" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="52" Selected="True" />
+        <Tool ToolId="65" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>HTTP Header from Download Tool</Name>
+          <Abbrev>H</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="DownloadHeaders" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>HTTP/1.1 400</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <AnnotationText>HeaderValue</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadHeaders" size="12" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="234" y="54" width="456" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>https://en.wikipedia.org/wiki/List_of_HTTP_status_codes</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="8" />
+          <Fields>
+            <Field name="Code" />
+            <Field name="Formal Descr" />
+            <Field name="Human Readable Descr" />
+            <Field name="IsErrorResponse" />
+          </Fields>
+          <Data>
+            <r>
+              <c>200</c>
+              <c>OK</c>
+              <c>Successful Call</c>
+              <c>False</c>
+            </r>
+            <r>
+              <c>204</c>
+              <c>No Content</c>
+              <c>The server successfully processed the request and is not returning any content</c>
+              <c>False</c>
+            </r>
+            <r>
+              <c>400</c>
+              <c>Bad Request</c>
+              <c>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing)</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>401</c>
+              <c>Unauthorized</c>
+              <c>Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided</c>
+              <c />
+            </r>
+            <r>
+              <c>402</c>
+              <c>Payment Required</c>
+              <c>Requires payment to use this</c>
+              <c />
+            </r>
+            <r>
+              <c>403</c>
+              <c>Forbidden</c>
+              <c>Good request but server is refusing.   User may not have the necessary permissions</c>
+              <c />
+            </r>
+            <r>
+              <c>404</c>
+              <c>Not found</c>
+              <c>Web resource not found</c>
+              <c />
+            </r>
+            <r>
+              <c>408</c>
+              <c>Timeout</c>
+              <c>Request has timed out</c>
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Code" source="TextInput:" type="Int16" />
+            <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+            <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+            <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="138" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadHeaders</Field>
+          <NumFields value="4" />
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>HeaderValue</RootName>
+          <Delimeters value="/ " />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadHeaders" size="12" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="HeaderValue1" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="HeaderValue2" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="HeaderValue3" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="HeaderValue4" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DownloadHeaders" selected="False" />
+            <SelectField field="HeaderValue1" selected="False" />
+            <SelectField field="HeaderValue2" selected="False" />
+            <SelectField field="HeaderValue3" selected="True" rename="ResponseCode" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="ResponseCode" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="HeaderValue4" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="366" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ResponseCode" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ResponseCode" selected="False" />
+                <SelectField field="Left_HeaderValue4" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="ResponseCode" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="HeaderValue4" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="ResponseCode" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Code" size="5" source="TextInput:" type="String" />
+            <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+            <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+            <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Code" size="5" source="TextInput:" type="String" />
+            <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+            <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+            <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Code" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="510" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>Filter</When>
+          <Filter>1=1</Filter>
+          <Type>Message</Type>
+          <Priority>Normal</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>"HTTP Response Code not found - " + [ResponseCode]</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="ResponseCode" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadHeaders" name="HeaderValue4" size="12" source="TextToColumns: Parsed from DownloadHeaders" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="ResponseCode" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Code" selected="True" type="String" size="5" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Code" size="5" source="TextInput:" type="String" />
+            <Field name="Formal Descr" size="16" source="TextInput:" type="V_String" />
+            <Field name="Human Readable Descr" size="193" source="TextInput:" type="V_String" />
+            <Field name="IsErrorResponse" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="510" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output13</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Left" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (3)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (13)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>HTTP Header Interpreter</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (3)</Description>
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (13)</Description>
+              <Name>Macro Output (13)</Name>
+              <ToolId value="13" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
