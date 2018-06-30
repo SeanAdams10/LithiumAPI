@@ -1,0 +1,1491 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="222" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Mode>First</Mode>
+          <N>10</N>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 10</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="TextInput:" type="Int16" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="222" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Mode>Skip</Mode>
+          <N>10</N>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 10</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="TextInput:" type="Int16" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" field="page" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[page = if isnull([page])
+then 1
+elseif [Page]=1999
+Then 1
+else
+[Page]+1
+endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+        <Position x="990" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <XMLField>DownloadData</XMLField>
+          <XMLElement>message</XMLElement>
+          <ChildValues value="True" />
+          <OuterXML value="True" />
+          <ParseRoot value="False" />
+          <IgnoreErrors value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="510" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>BaseURL</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="BaseURL" selected="False" />
+              <Field name="page" selected="False" />
+              <Field name="EarlyDate" selected="False" />
+              <Field name="restapi.session_key" selected="False" />
+              <Field name="Li-Api-Session-Key" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues>
+              <Item name="message_viewer.message_sort_order" value="thread_descending" />
+              <Item name="page_size" value="10" />
+            </ComposeNameValues>
+            <ComposeFields orderChanged="False">
+              <Field name="page" />
+              <Field name="restapi.session_key" />
+              <Field name="Li-Api-Session-Key" />
+              <Field name="BaseURL" selected="False" />
+              <Field name="EarlyDate" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1074" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BaseURL" selected="True" />
+            <SelectField field="DownloadData" selected="False" />
+            <SelectField field="DownloadHeaders" selected="False" />
+            <SelectField field="message" selected="False" />
+            <SelectField field="type" selected="False" />
+            <SelectField field="href" selected="True" rename="MessageHRef" />
+            <SelectField field="root" selected="True" />
+            <SelectField field="root_type" selected="False" />
+            <SelectField field="root_href" selected="False" />
+            <SelectField field="root_OuterXML" selected="False" />
+            <SelectField field="canonical_url" selected="False" />
+            <SelectField field="canonical_url_type" selected="False" />
+            <SelectField field="canonical_url_null" selected="False" />
+            <SelectField field="canonical_url_OuterXML" selected="False" />
+            <SelectField field="post_time" selected="True" />
+            <SelectField field="post_time_type" selected="False" />
+            <SelectField field="post_time_OuterXML" selected="False" />
+            <SelectField field="last_edit_time" selected="False" />
+            <SelectField field="last_edit_time_type" selected="False" />
+            <SelectField field="last_edit_time_OuterXML" selected="False" />
+            <SelectField field="board_id" selected="False" />
+            <SelectField field="board_id_type" selected="False" />
+            <SelectField field="board_id_OuterXML" selected="False" />
+            <SelectField field="parent" selected="False" />
+            <SelectField field="parent_type" selected="False" />
+            <SelectField field="parent_null" selected="False" />
+            <SelectField field="parent_OuterXML" selected="False" />
+            <SelectField field="views" selected="False" />
+            <SelectField field="views_OuterXML" selected="False" />
+            <SelectField field="labels" selected="False" />
+            <SelectField field="labels_OuterXML" selected="False" />
+            <SelectField field="message_rating" selected="False" />
+            <SelectField field="message_rating_type" selected="False" />
+            <SelectField field="message_rating_OuterXML" selected="False" />
+            <SelectField field="last_edit_author" selected="False" />
+            <SelectField field="last_edit_author_type" selected="False" />
+            <SelectField field="last_edit_author_href" selected="False" />
+            <SelectField field="last_edit_author_OuterXML" selected="False" />
+            <SelectField field="kudos" selected="False" />
+            <SelectField field="kudos_OuterXML" selected="False" />
+            <SelectField field="seo_title" selected="False" />
+            <SelectField field="seo_title_type" selected="False" />
+            <SelectField field="seo_title_null" selected="False" />
+            <SelectField field="board_href" selected="True" />
+            <SelectField field="seo_title_OuterXML" selected="False" />
+            <SelectField field="seo_description" selected="False" />
+            <SelectField field="seo_description_type" selected="False" />
+            <SelectField field="seo_description_null" selected="False" />
+            <SelectField field="seo_description_OuterXML" selected="False" />
+            <SelectField field="thread" selected="False" />
+            <SelectField field="thread_type" selected="False" />
+            <SelectField field="thread_href" selected="True" />
+            <SelectField field="thread_OuterXML" selected="False" />
+            <SelectField field="teaser" selected="False" />
+            <SelectField field="teaser_type" selected="False" />
+            <SelectField field="teaser_OuterXML" selected="False" />
+            <SelectField field="board" selected="False" />
+            <SelectField field="board_type" selected="False" />
+            <SelectField field="board_OuterXML" selected="False" />
+            <SelectField field="subject" selected="False" />
+            <SelectField field="subject_type" selected="False" />
+            <SelectField field="subject_OuterXML" selected="False" />
+            <SelectField field="id" selected="True" />
+            <SelectField field="id_type" selected="False" />
+            <SelectField field="id_OuterXML" selected="False" />
+            <SelectField field="read_only" selected="False" />
+            <SelectField field="read_only_type" selected="False" />
+            <SelectField field="read_only_OuterXML" selected="False" />
+            <SelectField field="deleted" selected="False" />
+            <SelectField field="deleted_type" selected="False" />
+            <SelectField field="deleted_OuterXML" selected="False" />
+            <SelectField field="author" selected="False" />
+            <SelectField field="author_type" selected="False" />
+            <SelectField field="author_href" selected="False" />
+            <SelectField field="author_OuterXML" selected="False" />
+            <SelectField field="message_OuterXML" selected="True" />
+            <SelectField field="parent_href" selected="False" />
+            <SelectField field="EarlyDate" selected="True" />
+            <SelectField field="restapi.session_key" selected="True" />
+            <SelectField field="Li-Api-Session-Key" selected="True" />
+            <SelectField field="page" selected="True" />
+            <SelectField field="message_status" selected="False" />
+            <SelectField field="message_status_type" selected="False" />
+            <SelectField field="message_status_href" selected="False" />
+            <SelectField field="message_status_OuterXML" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>trim out unnecessary fields</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1638" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="MessageHRef" selected="False" />
+            <SelectField field="root" selected="False" />
+            <SelectField field="post_time" selected="False" />
+            <SelectField field="board_href" selected="False" />
+            <SelectField field="thread_href" selected="False" />
+            <SelectField field="id" selected="True" rename="message_id" type="Int64" size="8" />
+            <SelectField field="message_OuterXML" selected="False" />
+            <SelectField field="post_time1" selected="False" />
+            <SelectField field="post_time2" selected="False" />
+            <SelectField field="post_time3" selected="False" />
+            <SelectField field="message_id_2" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Reorder for good sense</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="message_id" source="TextInput:" type="Int64" />
+            <Field name="board_id" size="1073741823" source="Formula: replace([board_id],'/blogs/id/','')" type="V_WString" />
+            <Field name="thread_id" size="1073741823" source="Formula: toNumber(replace([thread_href],'/threads/id/',''))" type="V_WString" />
+            <Field name="post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="IterationID" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1542" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="replace([board_href],'/boards/id/','')" field="board_id" size="1073741823" type="V_WString" />
+            <FormulaField expression="tonumber(replace([MessageHRef],'/messages/id/',''))" field="message_id_2" size="8" type="Int64" />
+            <FormulaField expression="toNumber(replace([thread_href],'/threads/id/',''))" field="thread_id" size="1073741823" type="V_WString" />
+            <FormulaField expression="[post_time1] + ' ' + [post_time2]" field="post_date_time" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.IterationNumber]" field="IterationID" size="8" type="Int64" />
+            <FormulaField expression="replace([board_id],'/blogs/id/','')" field="board_id" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>board_id = replace([board_href],'/boards/id/','')
+message_id_2 = tonumber(replac...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="MessageHRef" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="root" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="post_time" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="board_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="thread_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="id" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="message_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from post_time" name="post_time1" size="1073741823" source="TextToColumns: Parsed from post_time" type="V_WString" />
+            <Field description="TextToColumns: Parsed from post_time" name="post_time2" size="1073741823" source="TextToColumns: Parsed from post_time" type="V_WString" />
+            <Field description="TextToColumns: Parsed from post_time" name="post_time3" size="1073741823" source="TextToColumns: Parsed from post_time" type="V_WString" />
+            <Field name="board_id" size="1073741823" source="Formula: replace([board_id],'/blogs/id/','')" type="V_WString" />
+            <Field name="message_id_2" source="Formula: tonumber(replace([MessageHRef],'/messages/id/',''))" type="Int64" />
+            <Field name="thread_id" size="1073741823" source="Formula: toNumber(replace([thread_href],'/threads/id/',''))" type="V_WString" />
+            <Field name="post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="IterationID" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1734" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[EarlyDate] &lt;=[post_date_time]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-21 16:33:19</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-04-21 16:33:19</StartDate>
+              <EndDate>2018-04-21 16:33:19</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[EarlyDate] &lt;=[post_date_time]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="message_id" source="TextInput:" type="Int64" />
+            <Field name="board_id" size="1073741823" source="Formula: replace([board_id],'/blogs/id/','')" type="V_WString" />
+            <Field name="thread_id" size="1073741823" source="Formula: toNumber(replace([thread_href],'/threads/id/',''))" type="V_WString" />
+            <Field name="post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="IterationID" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="message_id" source="TextInput:" type="Int64" />
+            <Field name="board_id" size="1073741823" source="Formula: replace([board_id],'/blogs/id/','')" type="V_WString" />
+            <Field name="thread_id" size="1073741823" source="Formula: toNumber(replace([thread_href],'/threads/id/',''))" type="V_WString" />
+            <Field name="post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="IterationID" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1338" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>post_time</Field>
+          <NumFields value="3" />
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>post_time</RootName>
+          <Delimeters value="T+" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="MessageHRef" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="root" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="post_time" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="board_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="thread_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="id" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="message_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from post_time" name="post_time1" size="1073741823" source="TextToColumns: Parsed from post_time" type="V_WString" />
+            <Field description="TextToColumns: Parsed from post_time" name="post_time2" size="1073741823" source="TextToColumns: Parsed from post_time" type="V_WString" />
+            <Field description="TextToColumns: Parsed from post_time" name="post_time3" size="1073741823" source="TextToColumns: Parsed from post_time" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2022" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Good</Name>
+          <Abbrev>G</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1734" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="BaseURL" action="GroupBy" rename="BaseURL" />
+            <SummarizeField field="post_date_time" action="Min" rename="Min_post_date_time" />
+            <SummarizeField field="EarlyDate" action="Min" rename="EarlyDate" />
+            <SummarizeField field="restapi.session_key" action="GroupBy" rename="restapi.session_key" />
+            <SummarizeField field="Li-Api-Session-Key" action="GroupBy" rename="Li-Api-Session-Key" />
+            <SummarizeField field="page" action="GroupBy" rename="page" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="Summarize: GroupBy - BaseURL" type="V_WString" />
+            <Field name="Min_post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="Summarize: GroupBy - restapi.session_key" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="Summarize: GroupBy - Li-Api-Session-Key" type="V_WString" />
+            <Field name="page" size="1073741823" source="Summarize: GroupBy - page" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="BaseURL" order="Asc" />
+            <Field field="restapi.session_key" order="Asc" />
+            <Field field="Li-Api-Session-Key" order="Asc" />
+            <Field field="page" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1830" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[EarlyDate] &lt;=[Min_post_date_time]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-21 16:33:26</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2018-04-21 16:33:26</StartDate>
+              <EndDate>2018-04-21 16:33:26</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[EarlyDate] &lt;=[Min_post_date_time]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="Summarize: GroupBy - BaseURL" type="V_WString" />
+            <Field name="Min_post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="Summarize: GroupBy - restapi.session_key" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="Summarize: GroupBy - Li-Api-Session-Key" type="V_WString" />
+            <Field name="page" size="1073741823" source="Summarize: GroupBy - page" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="BaseURL" order="Asc" />
+            <Field field="restapi.session_key" order="Asc" />
+            <Field field="Li-Api-Session-Key" order="Asc" />
+            <Field field="page" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="Summarize: GroupBy - BaseURL" type="V_WString" />
+            <Field name="Min_post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="Summarize: GroupBy - restapi.session_key" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="Summarize: GroupBy - Li-Api-Session-Key" type="V_WString" />
+            <Field name="page" size="1073741823" source="Summarize: GroupBy - page" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="BaseURL" order="Asc" />
+            <Field field="restapi.session_key" order="Asc" />
+            <Field field="Li-Api-Session-Key" order="Asc" />
+            <Field field="page" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1926" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BaseURL" selected="True" />
+            <SelectField field="EarlyDate" selected="True" />
+            <SelectField field="restapi.session_key" selected="True" />
+            <SelectField field="Li-Api-Session-Key" selected="True" />
+            <SelectField field="page" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="Summarize: GroupBy - BaseURL" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="Summarize: GroupBy - restapi.session_key" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="Summarize: GroupBy - Li-Api-Session-Key" type="V_WString" />
+            <Field name="page" size="1073741823" source="Summarize: GroupBy - page" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="BaseURL" order="Asc" />
+            <Field field="restapi.session_key" order="Asc" />
+            <Field field="Li-Api-Session-Key" order="Asc" />
+            <Field field="page" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2118" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Rework</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2022" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1830" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="EarlyDate" selected="True" />
+            <SelectField field="post_date_time" selected="True" />
+            <SelectField field="IterationID" selected="True" />
+            <SelectField field="BaseURL" selected="True" size="400" />
+            <SelectField field="board_id" selected="True" />
+            <SelectField field="thread_id" selected="True" />
+            <SelectField field="message_id" selected="True" />
+            <SelectField field="restapi.session_key" selected="True" />
+            <SelectField field="Li-Api-Session-Key" selected="True" />
+            <SelectField field="page" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="IterationID" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field name="BaseURL" size="400" source="TextInput:" type="V_WString" />
+            <Field name="board_id" size="1073741823" source="Formula: replace([board_id],'/blogs/id/','')" type="V_WString" />
+            <Field name="thread_id" size="1073741823" source="Formula: toNumber(replace([thread_href],'/threads/id/',''))" type="V_WString" />
+            <Field name="message_id" source="TextInput:" type="Int64" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="606" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>Filter</When>
+          <Filter>1=1</Filter>
+          <Type>Message</Type>
+          <Priority>Normal</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>"Page : " + tostring([Page]) + ' on URL: ' + [BaseURL]</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1926" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="board_id" />
+          </KeyFields>
+          <DataFields>
+            <Field field="EarlyDate" selected="False" />
+            <Field field="post_date_time" selected="False" />
+            <Field field="IterationID" selected="False" />
+            <Field field="BaseURL" selected="False" />
+            <Field field="board_id" selected="False" />
+            <Field field="thread_id" selected="False" />
+            <Field field="message_id" selected="False" />
+            <Field field="restapi.session_key" selected="True" />
+            <Field field="Li-Api-Session-Key" selected="True" />
+            <Field field="page" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="board_id" size="1073741823" source="Formula: replace([board_id],'/blogs/id/','')" type="V_WString" />
+            <Field name="Name" size="19" source="Transpose:" type="String" />
+            <Field name="Value" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="2022" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>Filter</When>
+          <Filter>isnull([Value])</Filter>
+          <Type>Message</Type>
+          <Priority>Normal</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>"Field: " + [name] + " is null"</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="board_id" size="1073741823" source="Formula: replace([board_id],'/blogs/id/','')" type="V_WString" />
+            <Field name="Name" size="19" source="Transpose:" type="String" />
+            <Field name="Value" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="42" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input32</Name>
+          <Abbrev />
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="BaseURL" />
+                <Field name="page" />
+                <Field name="EarlyDate" />
+                <Field name="restapi.session_key" />
+                <Field name="Li-Api-Session-Key" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>http://community.alteryx.com/restapi/vc/boards/id/Community-ideas/messages/linear</c>
+                  <c>1999</c>
+                  <c>2018-04-01</c>
+                  <c>LebL4fyM6-ExEwT8Fm8wScxgdQFug4dtxcaDea2uBW_jrFkVlNCgZTS_Ru_yDFWmXX2DN7MZvbxcz0sjneSzwIYn-D1fuEjn6n1d65iBsOCb_Zil8Vik_nmPXOmfBx32t7rNVekZ5BvHOTod7sSigIJLpdVniaR0ixu97jWDN9SjhFh5f4yyChJz49p1f8-WUtVDOqvsh4x_oxJfv7zunRA4OKC0bm0Fl8OAwZNR_kvvtYJyB4W4xxSevrwNUIm8FhscnZC7lHchXlOMb42I1e7J9S0DT-fB_gI6jOtm0iXjke0Jn4WRSkzXJ9Ka-VKmGS2uy0jvW9QGSJkd9BI92KQKNP2YJhWtaXuMCihUY7ZHGoeYIdQpanLJ5ky3r3pSD0UIyPw18bdqLCUqwJvDINoDvrLguPPSRqrGKxuU5imPRk4kFzoAf0sNdNTttraeva4Y</c>
+                  <c>LebL4fyM6-ExEwT8Fm8wScxgdQFug4dtxcaDea2uBW_jrFkVlNCgZTS_Ru_yDFWmXX2DN7MZvbxcz0sjneSzwIYn-D1fuEjn6n1d65iBsOCb_Zil8Vik_nmPXOmfBx32t7rNVekZ5BvHOTod7sSigIJLpdVniaR0ixu97jWDN9SjhFh5f4yyChJz49p1f8-WUtVDOqvsh4x_oxJfv7zunRA4OKC0bm0Fl8OAwZNR_kvvtYJyB4W4xxSevrwNUIm8FhscnZC7lHchXlOMb42I1e7J9S0DT-fB_gI6jOtm0iXjke0Jn4WRSkzXJ9Ka-VKmGS2uy0jvW9QGSJkd9BI92KQKNP2YJhWtaXuMCihUY7ZHGoeYIdQpanLJ5ky3r3pSD0UIyPw18bdqLCUqwJvDINoDvrLguPPSRqrGKxuU5imPRk4kFzoAf0sNdNTttraeva4Y</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (31)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="TextInput:" type="Int16" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings>
+        <Position x="1926" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"board_id"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="EarlyDate" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="post_date_time" source="Formula: [post_time1] + ' ' + [post_time2]" type="DateTime" />
+            <Field name="IterationID" source="Formula: IF [_CurrentFieldName_] IN(&quot;board_id&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+            <Field name="BaseURL" size="400" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="board_id" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="thread_id" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="message_id" source="Formula: IF [_CurrentFieldName_] IN(&quot;board_id&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+            <Field name="restapi.session_key" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="page" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="702" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([DownloadData],"&lt;response status=" + '"' + "error" + '"' + "&gt;")</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>DownloadData</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-25 09:35:06</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>&lt;response status="error"&gt;</Operand>
+              <StartDate>2018-04-25 09:35:06</StartDate>
+              <EndDate>2018-04-25 09:35:06</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([DownloadData],"&lt;response status=" + '"' + "error" + '"' + "&gt;")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="798" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([DownloadData],"&lt;response status=" + '"' + "success" + '"' + "&gt; &lt;messages/&gt; &lt;/response&gt;")</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>DownloadData</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-25 09:50:42</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>&lt;response status="success"&gt; &lt;messages/&gt; &lt;/response&gt;</Operand>
+              <StartDate>2018-04-25 09:50:42</StartDate>
+              <EndDate>2018-04-25 09:50:42</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>empty response set</AnnotationText>
+          <DefaultAnnotationText>Contains([DownloadData],"&lt;response status=" + '"' + "success" + '"' + "&gt; &lt;messag...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="894" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Length([DownloadData]) &gt; 120</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-21 16:34:28</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-04-21 16:34:28</StartDate>
+              <EndDate>2018-04-21 16:34:28</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>empty responses</AnnotationText>
+          <DefaultAnnotationText>Length([DownloadData]) &gt; 120</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="786" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>First</When>
+          <Filter />
+          <Type>Warning</Type>
+          <Priority>Normal</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>"Error on URL: " + [BaseURL] + " Page: " + tostring([page])</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="Formula: if isnull([page])&#xA;then 1&#xA;elseif [Page]=1999&#xA;Then 1&#xA;else&#xA;[Page]+1&#xA;endif" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1242" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="MessageHRef" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="root" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="post_time" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="board_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="thread_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="id" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="message_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1074" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="0" />
+          <Fields>
+            <Field name="BaseURL" />
+            <Field name="MessageHRef" />
+            <Field name="root" />
+            <Field name="post_time" />
+            <Field name="board_href" />
+            <Field name="thread_href" />
+            <Field name="id" />
+            <Field name="message_OuterXML" />
+            <Field name="EarlyDate" />
+            <Field name="restapi.session_key" />
+            <Field name="Li-Api-Session-Key" />
+            <Field name="page" />
+          </Fields>
+          <Data />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text input to standardise columns if no rows returned</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="MessageHRef" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="root" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="post_time" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="board_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="thread_href" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="id" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="message_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="EarlyDate" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="restapi.session_key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Li-Api-Session-Key" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="page" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="318" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="page" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BaseURL" size="81" source="TextInput:" type="String" />
+            <Field name="page" source="TextInput:" type="Int64" />
+            <Field name="EarlyDate" source="TextInput:" type="Date" />
+            <Field name="restapi.session_key" size="452" source="TextInput:" type="V_String" />
+            <Field name="Li-Api-Session-Key" size="452" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="33" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output26" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="False" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="False" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (16)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (20)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (32)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>GetMessages</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (16)</Description>
+              <Name>Macro Output (16)</Name>
+              <ToolId value="16" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (20)</Description>
+              <Name>Macro Output (20)</Name>
+              <ToolId value="20" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (32)</Description>
+              <Name>Macro Input (32)</Name>
+              <ToolId value="32" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input32</Input>
+        <Output>Rework</Output>
+        <IterationLimit value="9999" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="16" Selected="True" />
+        <Tool ToolId="20" Selected="True" />
+        <Tool ToolId="32" Selected="True" />
+        <Tool ToolId="33" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
