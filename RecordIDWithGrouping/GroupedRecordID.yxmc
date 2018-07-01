@@ -1,0 +1,1158 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="530" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="Groupby" />
+                <Field name="ExpectedVal" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Groupby" source="TextInput:" type="Byte" />
+            <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="246" y="530" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Groupby" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Groupby - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+            <Field name="Groupby" source="TextInput:" type="Byte" />
+            <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Groupby" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1458" y="518" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output30</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="150" y="530" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>OriginalRecordSortOrderID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int64</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+            <Field name="Groupby" source="TextInput:" type="Byte" />
+            <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="OriginalRecordSortOrderID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1362" y="518" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="OriginalRecordSortOrderID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Groupby" source="TextInput:" type="Byte" />
+            <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+            <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+            <Field description="Formula: [Row-1:RecordID]+1" name="RecordID" source="Formula: [Row-1:RecordID]+1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="704" y="465" width="271" height="134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>RecordID</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="810" y="494" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>RecordID</UpdateField_Name>
+              <CreateField_Name>RecordID</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>[Row-1:RecordID]+1</Expression>
+              <GroupByFields>
+                <Field field="Groupby" />
+              </GroupByFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Row-1:RecordID]+1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+                <Field description="Formula: [Row-1:RecordID]+1" name="RecordID" source="Formula: [Row-1:RecordID]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+            <Position x="714" y="530" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <DetourRight value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+            <Position x="906" y="530" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+                <Field description="Formula: [Row-1:RecordID]+1" name="RecordID" source="Formula: [Row-1:RecordID]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1028" y="453" width="283" height="145" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Re-Sort Results</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1146" y="482" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="OriginalRecordSortOrderID" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>OriginalRecordSortOrderID - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+                <Field description="Formula: [Row-1:RecordID]+1" name="RecordID" source="Formula: [Row-1:RecordID]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="OriginalRecordSortOrderID" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+            <Position x="1038" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <DetourRight value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+                <Field description="Formula: [Row-1:RecordID]+1" name="RecordID" source="Formula: [Row-1:RecordID]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+                <Field description="Formula: [Row-1:RecordID]+1" name="RecordID" source="Formula: [Row-1:RecordID]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+            <Position x="1242" y="518" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+                <Field description="Formula: [Row-1:RecordID]+1" name="RecordID" source="Formula: [Row-1:RecordID]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="OriginalRecordSortOrderID" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="390" y="474" width="271" height="190" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>GroupID</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="496" y="503" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>RecordID</UpdateField_Name>
+              <CreateField_Name>GroupID</CreateField_Name>
+              <CreateField_Type>Int64</CreateField_Type>
+              <CreateField_Size>8</CreateField_Size>
+              <OtherRows>NULL</OtherRows>
+              <NumRows value="1" />
+              <Expression><![CDATA[if isnull([Row-1:Groupby]) 
+then
+	1
+elseif [Row-1:Groupby] = [Groupby]
+then 
+	[Row-1:GroupID]
+else
+	[Row-1:GroupID]+1
+endif ]]></Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>if isnull([Row-1:Groupby]) 
+then
+	1
+elseif [Row-1:Groupby] = ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+            <Position x="400" y="539" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <DetourRight value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+            <Position x="592" y="539" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalRecordSortOrderID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Groupby" source="TextInput:" type="Byte" />
+                <Field name="ExpectedVal" source="TextInput:" type="Byte" />
+                <Field description="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " name="GroupID" source="Formula: if isnull([Row-1:Groupby]) &#xA;then&#xA;	1&#xA;elseif [Row-1:Groupby] = [Groupby]&#xA;then &#xA;	[Row-1:GroupID]&#xA;else&#xA;	[Row-1:GroupID]+1&#xA;endif " type="Int64" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Groupby" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1266" y="182" width="189.7555" height="170" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Check for missing Input</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="1288" y="283" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="TestValue" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>KittyCat</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TestValue" size="8" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+            <Position x="1384" y="283" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <When>Filter</When>
+              <Filter>isnull([TestValue])</Filter>
+              <Type>ErrorStop</Type>
+              <Priority>High</Priority>
+              <Transient>False</Transient>
+              <MessageExpression>"A field must be selected for this tool to work"</MessageExpression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="TestValue" size="8" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1276" y="211" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="198.0001" y="54" width="978.9999" height="303" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Macro Controls</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="847" y="255" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Record ID formula</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+            <Position x="223.0001" y="98.00031" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="259" y="267.0001" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Sort</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="714" y="102" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="438" y="102" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+            <Position x="1014" y="110" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="714" y="254" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Detour for RecID</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1014" y="266" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Sort Order</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="559" y="255" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Formula for GroupID</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="438" y="254" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>detour for GroupID</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection Wireless="True">
+      <Origin ToolID="3" Connection="Question" />
+      <Destination ToolID="15" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="59" Connection="Action" />
+      <Destination ToolID="51" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="28" Connection="Action" />
+      <Destination ToolID="27" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="49" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Right" />
+      <Destination ToolID="49" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Left" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="16" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="62" Connection="Action" />
+      <Destination ToolID="60" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="61" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Right" />
+      <Destination ToolID="61" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Left" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="52" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Right" />
+      <Destination ToolID="52" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Left" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="53" Connection="Action" />
+      <Destination ToolID="50" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="58" Connection="Action" />
+      <Destination ToolID="48" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="38" Connection="Action" />
+      <Destination ToolID="36" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="16" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="28" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="38" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="53" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="47" Connection="Question" />
+      <Destination ToolID="58" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="46" Connection="Question" />
+      <Destination ToolID="59" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="54" Connection="Question" />
+      <Destination ToolID="62" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (30)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (46)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (47)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (54)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Grouped Record ID</Name>
+      <Description>This macro provides a record ID tool that allows for grouping by one of the fields</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Preparation</CategoryName>
+      <SearchTags>RecordID, Group, GroupRecord</SearchTags>
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="16" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/GroupByFields/Field/@field</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="28" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>27/SortInfo/Field/@field</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="38" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>36/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="53" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Groupby</ReplaceText>
+              <Destination>50/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="58" />
+              <Expression>not([#1])</Expression>
+              <Destination>48/DetourRight/@value</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="59" />
+              <Expression>not([#1])</Expression>
+              <Destination>51/DetourRight/@value</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="62" />
+              <Expression>not([#1] = 'Original Order')</Expression>
+              <Destination>60/DetourRight/@value</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (3)</Description>
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Single Group By Field</Description>
+              <Name>Drop Down (15)</Name>
+              <ToolId value="15" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="0" />
+              <Field_IncludeNone value="True" />
+              <MacroField_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</MacroField_FilterTypes>
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (30)</Description>
+              <Name>Macro Output (30)</Name>
+              <ToolId value="30" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Add Group ID field?</Description>
+              <Name>Check Box (46)</Name>
+              <ToolId value="46" />
+              <Questions />
+              <Default value="True" />
+              <Collapsable value="False" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Add RecordID field?</Description>
+              <Name>Check Box (47)</Name>
+              <ToolId value="47" />
+              <Questions />
+              <Default value="True" />
+              <Collapsable value="False" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Result Record Order</Description>
+              <Name>Drop Down (54)</Name>
+              <ToolId value="54" />
+              <Multiple value="False" />
+              <Default>Original Order</Default>
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[Original Order
+Grouped Order
+]]></Manual_Values>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="30" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
